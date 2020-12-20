@@ -1,0 +1,20 @@
+// Color Pallete
+$white: #ffffff;
+$cyan: #d2f6fc;
+$light_purple: #7984ee;
+$purple: #6730ec; //background-color
+$dark_purple: #280b6f;
+
+//styling
+body{
+    background-color: $white;
+    color: $dark_purple !important;
+}
+
+nav#nav-bar{
+    background-color: $purple !important;
+}
+
+#lyric-button{
+    background-color: $dark_purple !important;
+}

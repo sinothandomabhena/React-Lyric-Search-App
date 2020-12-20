@@ -1,9 +1,10 @@
-import React/*,{ Component }*/from 'react'
+import React from 'react'
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Navbar from './components/layouts/Navbar'
 import Index from './components/layouts/Index'
 import {Provider} from './context'
+import Lyrics from './components/tracks/Lyrics'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <div className="container">
             <Switch>
               <Route exact path="/" component={Index} />
+              <Route exact path="/lyrics/tracks/:id" component={Lyrics} />
             </Switch>
           </div>
         </React.Fragment>
@@ -21,5 +23,4 @@ function App() {
     </Provider>
   );
 }
-
 export default App;
