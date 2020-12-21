@@ -6,16 +6,16 @@ const Track = (props) => {
 
     return (
         <div className="col-md-6">
-            <div className="card mb-4 shadow-sm">
-                <div className="card-body">
-                    <h5>{track.artist_name}</h5>
+            <div id="track-card" className="card mb-3 shadow-sm">
+                <div className="card-body text-center">
+                    <h5 className="text-center font-weight-bold h3 mb-4">{track.artist_name}</h5>
                     <p className="card-text">
-                        <strong><i className="fa fa-play"></i> Track</strong> : {track.track_name}
+                        <strong>Track</strong> - {track.track_name}
                         <br />
-                        <strong><i className="fa fa-play"></i> Album</strong> : {track.album_name}
+                        <strong>Album</strong> - {track.album_name}
                     </p>
-                    <Link to={`lyrics/tracks/${track.track_id}`} id="lyric-button" className="btn btn-dark btn-block">
-                        <i className="fa fa-chevron-right"></i> View Lyrics
+                    <Link to={`lyrics/tracks/${track.track_id}`} id="lyric-button" className="btn btn-dark font-weight-bold h2">
+                        View Lyrics
                     </Link>
                 </div>
             </div>

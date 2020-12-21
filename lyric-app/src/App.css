@@ -8,6 +8,24 @@ nav#nav-bar {
 }
 
 #lyric-button {
-  background-color: #280b6f !important;
+  background-color: #ffffff !important;
+  border-color: #6730ec !important;
+  color: #6730ec;
+  border-radius: 20px;
+}
+
+#lyric-button:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #6730ec !important;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+#track-card:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-shadow: 2px 0px 17px -6px rgba(103, 48, 236, 0.47) !important;
+  box-shadow: 2px 0px 17px -6px rgba(103, 48, 236, 0.47) !important;
 }
 /*# sourceMappingURL=App.css.map */
